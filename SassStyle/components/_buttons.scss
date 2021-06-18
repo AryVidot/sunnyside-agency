@@ -1,0 +1,23 @@
+.btn {
+  font-family: $body-ft;
+  text-decoration: none;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: $White;
+  color: $Very-dark-grayish-blue;
+  font-size: $fs-xsmall;
+  transition: 0.3s;
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+// Media
+@media (min-width: $tablet) {
+  .btn {
+    font-size: $fs-small;
+    padding: 1.5rem;
+  }
+}

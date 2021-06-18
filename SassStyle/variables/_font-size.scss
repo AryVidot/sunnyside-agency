@@ -1,0 +1,35 @@
+// Body Copy
+$fs-std: 18px;
+
+// Font sizes
+$fs-xxlarge: 3.55rem;
+$fs-xlarge: 2.875rem;
+$fs-large: 2rem;
+$fs-medium: 1.5rem;
+$fs-small: 1.125rem;
+$fs-xsmall: 1rem;
+$fs-xxsmall: 0.5rem;
+
+// Padding
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 1rem;
+}
+
+// Heading Size
+h1 {
+  font-size: $fs-xlarge;
+}
+
+h2 {
+  font-size: $fs-large;
+}
+
+p {
+  font-size: $fs-medium;
+  line-height: 1.5em;
+}

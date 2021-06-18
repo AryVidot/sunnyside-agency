@@ -1,0 +1,37 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $White;
+  position: relative;
+  font-size: $fs-std;
+}
+
+// .container {
+//   width: 90%;
+//   max-width: 1400px;
+//   margin: 0 auto;
+//   position: relative;
+// }
+
+img {
+  max-width: 100%;
+}
+
+// section {
+//   padding: 50px 0;
+// }
+
+// // Media
+// @media (min-width: $tablet) {
+//   section {
+//     padding: 100px 0;
+//   }
+// }

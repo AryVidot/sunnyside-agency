@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.875rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: white;
+  color: #5a636c;
+  font-size: 1rem;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+@media (min-width: 769px) {
+  .btn {
+    font-size: 1.125rem;
+    padding: 1.5rem;
+  }
+}
+
+header {
+  padding: 1em 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header .nav--toggled {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  width: auto;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+  max-width: 100%;
+  height: 100%;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.nav .nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav__item {
+  margin: auto;
+  margin-top: 1em;
+  display: block;
+  cursor: pointer;
+}
+
+.nav__item .nav__link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-size: 1rem;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.nav__item .nav__link:hover, .nav__item .nav__link:focus {
+  opacity: 0.75;
+}
+
+.nav__item .nav__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav__item .nav__link:hover::after {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 15%;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+  color: white;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.grid .testimonial-card {
+  padding: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+.hero {
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero__text {
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__text p {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 320px) {
+  .hero__text {
+    width: 80%;
+  }
+  .hero__text p {
+    font-size: 1rem;
+    padding-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__text {
+    width: 80%;
+  }
+  .hero__text h1 {
+    font-size: 3.55rem;
+  }
+  .hero__text p {
+    margin-bottom: 2em;
+  }
+  .hero__img {
+    width: 32%;
+    align-self: flex-start;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
