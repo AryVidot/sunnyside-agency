@@ -5,6 +5,14 @@
 $title-ft: "Fraunces", serif;
 $body-ft: "Barlow", sans-serif;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-ft;
+}
 p {
   font-family: $body-ft;
 }

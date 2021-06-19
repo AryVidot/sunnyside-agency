@@ -1,0 +1,74 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  .logo {
+    font-size: $fs-small;
+    text-decoration: none;
+    color: $White;
+    h1 {
+      font-family: $body-ft;
+      text-transform: lowercase;
+      font-weight: 600;
+    }
+  }
+}
+
+.nav__item {
+  list-style: none;
+  .nav__link {
+    text-decoration: none;
+    color: $White;
+    font-family: $body-ft;
+    font-weight: lighter;
+    // text-transform: uppercase;
+  }
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.75;
+}
+
+// NavLink CTA
+.cta {
+  font-family: $title-ft;
+  color: $Very-dark-desaturated-blue;
+  background-color: $White;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-out;
+}
+.cta:hover,
+.cta:focus {
+  opacity: 0.75;
+  color: $White;
+  // background-color: $Grayish-blue;
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+}
