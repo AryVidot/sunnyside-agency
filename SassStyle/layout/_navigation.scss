@@ -15,11 +15,6 @@ header {
 .logo {
   width: auto;
   align-items: center;
-  img {
-    width: 70px;
-    max-width: 100%;
-    height: 100%;
-  }
 }
 .nav {
   visibility: hidden;
@@ -56,26 +51,26 @@ header {
     font-family: $title-ft;
     font-weight: bold;
     letter-spacing: 5px;
-    &:hover,
-    &:focus {
-      opacity: 0.75;
-      // display: inline-block;
-      // border-color: $primary-clr;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 0%;
-      height: 2px;
-      left: 0;
-      // background-color: $primary-clr;
-      transition: $animate;
-    }
-    &:hover::after {
-      width: 100%;
-      transition: $animate;
-    }
+    // &:hover,
+    // &:focus {
+    //   opacity: 0.75;
+    //   // display: inline-block;
+    //   // border-color: $primary-clr;
+    // }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   width: 0%;
+    //   height: 2px;
+    //   left: 0;
+    //   // background-color: $primary-clr;
+    //   transition: $animate;
+    // }
+    // &:hover::after {
+    //   width: 100%;
+    //   transition: $animate;
+    // }
   }
 }
 
@@ -126,9 +121,9 @@ header {
 }
 
 @media (min-width: $tablet) {
-  header {
-    // box-shadow: 0 0 2px 0 $primary-clr;
-  }
+  // header {
+  //   box-shadow: 0 0 2px 0 $primary-clr;
+  // }
   .nav-toggle {
     display: none;
   }
