@@ -61,8 +61,10 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  padding-top: 1rem;
   width: 100%;
   z-index: 100;
+  background: cornflowerblue;
 }
 
 .nav-container {
@@ -73,15 +75,30 @@ header {
 }
 
 .nav-container .logo {
+  align-items: center;
   font-size: 1.125rem;
   text-decoration: none;
-  color: white;
+  color: red;
 }
 
 .nav-container .logo h1 {
   font-family: "Barlow", sans-serif;
   text-transform: lowercase;
   font-weight: 600;
+}
+
+.nav {
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
 }
 
 .nav__item {
@@ -95,13 +112,64 @@ header {
   font-weight: lighter;
 }
 
+.nav__item + .nav__item {
+  margin-left: 2.5rem;
+}
+
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.75;
 }
 
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  right: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
 .cta {
-  font-family: "Fraunces", serif;
+  font-family: "Fraunces", serif !important;
   color: #23303e;
   background-color: white;
   border-radius: 50px;
@@ -113,6 +181,7 @@ header {
 .cta:focus {
   opacity: 0.75;
   color: white;
+  background-color: #a7abae;
 }
 
 @media (min-width: 769px) {
@@ -130,6 +199,9 @@ header {
     align-items: center;
     margin: 0;
   }
+  .nav-toggle {
+    display: none;
+  }
 }
 
 .row {
@@ -139,68 +211,12 @@ header {
 
 .grid {
   display: grid;
-  gap: 1rem;
   box-sizing: border-box;
-}
-
-.grid .testimonial-card {
-  padding: 1rem;
 }
 
 @media (min-width: 1200px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, minmax(200px, 1fr));
-  }
-}
-
-.hero {
-  width: 100%;
-  height: 63vh;
-  background: url(../../images/mobile/header750.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-}
-
-.hero .hero__area {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
-}
-
-.hero .hero__area .hero__content {
-  text-align: center;
-}
-
-.hero .hero__area .hero__content .hero__title {
-  font-family: "Fraunces", serif;
-  color: white;
-  letter-spacing: 5px;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin-bottom: 2.3rem;
-}
-
-@media (min-width: 769px) {
-  .hero {
-    height: 100vh;
-    width: 100%;
-    background: url(../../images/desktop/header2880.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    position: relative;
-  }
-  .hero .hero__area {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
