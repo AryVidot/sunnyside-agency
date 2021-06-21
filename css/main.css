@@ -44,6 +44,12 @@ p {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -295,7 +301,7 @@ footer .footer__logo {
 }
 
 .hero {
-  height: 100vh;
+  height: 64%;
   background-image: url(../../images/mobile/header750.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -322,6 +328,7 @@ footer .footer__logo {
 
 .hero .hero__content img {
   height: 100%;
+  width: auto;
 }
 
 @media (min-width: 769px) {
@@ -391,6 +398,14 @@ footer .footer__logo {
     width: 100%;
     height: auto;
   }
+  .about__image {
+    height: auto;
+    width: 100%;
+  }
+  .about__image img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .primary__content:nth-of-type(1) {
@@ -399,7 +414,7 @@ footer .footer__logo {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 71vh;
 }
 
 .primary__content:nth-of-type(2) {
@@ -408,7 +423,21 @@ footer .footer__logo {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 71vh;
+}
+
+@media (min-width: 769px) {
+  .primary__content:nth-of-type(1) {
+    background-image: url(../../images/desktop/cherry720.jpg);
+    width: 100%;
+  }
+  .primary__content:nth-of-type(2) {
+    background-image: url(../../images/desktop/mandarin720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 .testimonial {

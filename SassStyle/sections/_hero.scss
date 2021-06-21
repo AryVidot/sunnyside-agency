@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 64%;
   background-image: url(../../images/mobile/header750.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -21,6 +21,7 @@
     }
     img {
       height: 100%;
+      width: auto;
     }
   }
 }
