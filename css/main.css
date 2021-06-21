@@ -463,14 +463,82 @@ footer .footer__logo {
 
 .testimonial h1 {
   text-transform: uppercase;
-  font-size: 2rem;
   font-weight: 900;
+  font-size: 1.125rem;
+  letter-spacing: 4px;
   color: #a7abae;
   text-align: center;
+  margin: 2rem 0 0 0;
 }
 
 .card {
   display: flex;
   justify-content: space-between;
+}
+
+.card .card__image {
+  border-radius: 50%;
+  height: 4.5rem;
+  margin: 2rem 0 2rem 0;
+}
+
+blockquote p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #5a636c;
+}
+
+blockquote cite {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  color: #23303e;
+  margin-bottom: 0.5rem;
+}
+
+blockquote p:nth-last-child(1) {
+  color: #a7abae;
+  font-size: 1rem;
+}
+
+@media (min-width: 769px) {
+  .testimonial {
+    padding: 12rem;
+    background-color: #fffcfa;
+  }
+  .testimonial h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .card .card__image {
+    border-radius: 50%;
+    height: 5rem;
+    margin: 2rem 0 5rem 0;
+  }
+  blockquote p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    color: #5a636c;
+  }
+  blockquote cite {
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #23303e;
+    margin-bottom: 0.5rem;
+  }
+  blockquote p:nth-last-child(1) {
+    color: #a7abae;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
