@@ -1,13 +1,15 @@
 .grid {
   display: grid;
-  // gap: 1rem;
-  // grid-template-rows: ;
   box-sizing: border-box;
 }
 
 // Media
-@media (min-width: $desktop) {
+@media (min-width: $small-laptop) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    .grid__item {
+      width: 100%;
+      height: auto;
+    }
   }
 }

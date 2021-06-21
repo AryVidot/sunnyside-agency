@@ -1,7 +1,11 @@
 // Font Family - Barlow & Fraunces
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
+// Font Family for Logo
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+
 // Font-family
+$logo-ft: "Lato", sans-serif;
 $title-ft: "Fraunces", serif;
 $body-ft: "Barlow", sans-serif;
 

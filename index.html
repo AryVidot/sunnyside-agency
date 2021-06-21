@@ -33,33 +33,37 @@
         </a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Projects</a></li>
             <li class="nav__item">
-              <a href="" class="nav__link cta">Contact</a>
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link cta">Contact</a>
             </li>
           </ul>
         </nav>
         <button class="nav-toggle" aria-label="open navigation">
-          <span class="hamburger"></span>
+          <img src="./images/icon-hamburger.svg" alt="hamburger button" />
         </button>
       </div>
     </header>
 
     <section class="hero">
-      <div class="hero__area">
-        <div class="hero__content">
-          <h1 class="hero__title">We are creatives</h1>
-          <img src="./images/icon-arrow-down.svg" alt="arrow down" />
-        </div>
+      <div class="hero__content">
+        <h1 class="hero__title">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow down" />
       </div>
     </section>
 
     <main>
       <div class="container">
         <section class="primary-content grid">
-          <div>
+          <div class="grid__item">
             <h1 class="section-title">Transform your brand</h1>
             <p>
               We are a full-service creative agency specializing in helping
@@ -68,7 +72,7 @@
             </p>
             <a href="#" class="btn">Learn more</a>
           </div>
-          <div class="image">
+          <div class="image grid__item">
             <img
               src="./images/mobile/egg750.jpg"
               alt="boiled egg"
@@ -101,21 +105,153 @@
             <a href="#" class="btn">Learn more</a>
           </div>
         </section>
+        <section class="primary-content grid">
+          <div class="primary__content">
+            <h1 class="primary__title">Graphic Design</h1>
+            <p>
+              We deliver artwork that underscores your brand message and
+              captures potential clients’ attention.
+            </p>
+          </div>
+        </section>
+        <section class="primary-content grid">
+          <div class="primary__content">
+            <h1 class="primary__title">Photography</h1>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </section>
+
+        <section class="testimonial">
+          <h1>Client testimonials</h1>
+          <div class="row">
+            <div class="card">
+              <img
+                class="card__image"
+                src="./images/image-emily.jpg"
+                alt="emily picture"
+              />
+              <div class="card__details">
+                <blockquote>
+                  <p>
+                    We put our trust in Sunnyside and they delivered, making
+                    sure our needs were met and deadlines were always hit.
+                  </p>
+                  <cite>Emily R.</cite>
+                  <p>Marketing Director</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card__image"
+                src="./images/image-thomas.jpg"
+                alt="emily picture"
+              />
+              <div class="card__details">
+                <blockquote>
+                  <p>
+                    Sunnyside’s enthusiasm coupled with their keen interest in
+                    our brand’s success made it a satisfying and enjoyable
+                    experience.
+                  </p>
+                  <cite>Thomas S.</cite>
+                  <p>Chief Operating Officer</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card__image"
+                src="./images/image-jennie.jpg"
+                alt="emily picture"
+              />
+              <div class="card__details">
+                <blockquote>
+                  <p>
+                    Incredible end result! Our sales increased over 400% when we
+                    worked with Sunnyside. Highly recommended!
+                  </p>
+                  <cite>Jennie F.</cite>
+                  <p>Business Owner</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
-      Learn more Graphic design Great design makes you memorable. We deliver
-      artwork that underscores your brand message and captures potential
-      clients’ attention. Photography Increase your credibility by getting the
-      most stunning, high-quality photos that improve your business image.
-      Client testimonials We put our trust in Sunnyside and they delivered,
-      making sure our needs were met and deadlines were always hit. Emily R.
-      Marketing Director Sunnyside’s enthusiasm coupled with their keen interest
-      in our brand’s success made it a satisfying and enjoyable experience.
-      Thomas S. Chief Operating Officer Incredible end result! Our sales
-      increased over 400% when we worked with Sunnyside. Highly recommended!
-      Jennie F. Business Owner About Services Projects Contact
+      <section class="block-image grid">
+        <div class="block-image__item">
+          <img
+            src="./images/mobile/milkbottles376.jpg"
+            alt="milk bottle"
+            srcset="
+              ./images/mobile/milkbottles376.jpg 376w,
+              ./images/dektop/milkbottles720.jpg 720vw
+            "
+          />
+        </div>
+        <div class="block-image__item">
+          <img
+            src="./images/mobile/orange376.jpg"
+            alt="orange in bowl"
+            srcset="
+              ./images/mobile/orange376.jpg 376w,
+              ./images/dektop/orange720.jpg 720vw
+            "
+          />
+        </div>
+        <div class="block-image__item">
+          <img
+            src="./images/mobile/cone376.jpg"
+            alt="empty ice cream cone"
+            srcset="
+              ./images/mobile/cone376.jpg 376w,
+              ./images/dektop/cone720.jpg 720vw
+            "
+          />
+        </div>
+        <div class="block-image__item">
+          <img
+            src="./images/mobile/sugar-cubes376.jpg"
+            alt="orange in bowl"
+            srcset="
+              ./images/mobile/sugar-cubes376.jpg 376w,
+              ./images/dektop/sugar-cubes720.jpg 720vw
+            "
+          />
+        </div>
+      </section>
     </main>
+    <footer>
+      <a href="#" class="footer__logo">
+        <h1>Sunnyside</h1>
+      </a>
 
+      <div class="row">
+        <div class="footer-item">
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-item">
+          <a href="#services">Services</a>
+        </div>
+        <div class="footer-item">
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="footer-item">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="social row">
+        <img src="./images/icon-facebook.svg" alt="facebook logo" />
+        <img src="./images/icon-instagram.svg" alt="instagram logo" />
+        <img src="./images/icon-twitter.svg" alt="twitter logo" />
+        <img src="./images/icon-pinterest.svg" alt="pinterest logo" />
+      </div>
+    </footer>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

@@ -1,4 +1,14 @@
 .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+// Media
+@media (min-width: $tablet) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
