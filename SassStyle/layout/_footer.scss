@@ -1,8 +1,51 @@
 footer {
+  padding: 4rem 2.5rem;
   background-color: $Moderate-cyan;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
+  color: $Dark-moderate-cyan;
+  & > a {
+    text-decoration: none;
+  }
   .footer__logo {
     text-align: center;
+    h1 {
+      font-family: $logo-ft;
+      text-transform: lowercase;
+      color: $Dark-moderate-cyan;
+      margin-bottom: 1.5rem;
+      font-size: $fs-xlarge;
+    }
+  }
+  .footer-item a {
+    text-decoration: none;
+    font-family: $body-ft;
+    color: $Dark-moderate-cyan;
+  }
+  .social {
+    margin-top: 4.5rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: $tablet) {
+  footer {
+    height: 35vh;
+    .row {
+      justify-content: center;
+      .footer-item a {
+        font-size: $fs-medium;
+      }
+      .footer-item + .footer-item {
+        margin-left: 4rem;
+      }
+    }
+    .social {
+      margin-top: 6rem;
+      justify-content: center;
+      img {
+        margin: 1rem;
+      }
+    }
   }
 }
