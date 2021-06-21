@@ -391,6 +391,22 @@ footer .footer__logo {
 }
 
 @media (min-width: 950px) {
+  .about__text {
+    align-items: baseline;
+    text-align: left;
+    padding: 7rem;
+  }
+  .about__text h1 {
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .about__text p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
   .about__item:nth-last-of-type(1) {
     order: 0;
   }

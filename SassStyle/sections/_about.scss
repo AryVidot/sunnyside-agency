@@ -25,6 +25,22 @@
 }
 
 @media (min-width: $small-laptop) {
+  .about__text {
+    align-items: baseline;
+    text-align: left;
+    padding: 7rem;
+    h1 {
+      font-size: $fs-xxlarge;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .section-title {
+    font-size: $fs-large;
+  }
   .about__item:nth-last-of-type(1) {
     order: 0;
   }
