@@ -7,9 +7,5 @@
 @media (min-width: $small-laptop) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
-    .grid__item {
-      width: 100%;
-      height: auto;
-    }
   }
 }

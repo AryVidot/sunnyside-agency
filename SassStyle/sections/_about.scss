@@ -1,0 +1,35 @@
+.about {
+  background-color: $Beige;
+}
+.about__text {
+  position: relative;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  h1 {
+    color: $Very-dark-desaturated-blue;
+    font-size: $fs-large;
+    font-weight: 900;
+  }
+  p {
+    color: $Dark-grayish-blue;
+    font-size: $fs-small;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    text-align: center;
+    z-index: 2;
+  }
+}
+.about__item:nth-last-of-type(1) {
+  order: -1;
+}
+
+@media (min-width: $small-laptop) {
+  .about__item:nth-last-of-type(1) {
+    order: 0;
+  }
+  .about__item {
+    width: 100%;
+    height: auto;
+  }
+}

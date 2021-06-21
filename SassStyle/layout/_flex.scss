@@ -3,6 +3,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 // Media
 @media (min-width: $tablet) {

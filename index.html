@@ -62,30 +62,33 @@
 
     <main>
       <div class="container">
-        <section class="primary-content grid">
-          <div class="grid__item">
+        <section class="about primary-content grid">
+          <div class="about__text flex">
             <h1 class="section-title">Transform your brand</h1>
             <p>
               We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
+              brands grow. <br />
+              Engage your clients through compelling visuals that do most of the
+              marketing for you.
             </p>
-            <a href="#" class="btn">Learn more</a>
+            <div class="btn">
+              <a href="#" class="btn-yellow">Learn more</a>
+            </div>
           </div>
-          <div class="image grid__item">
+          <div class="about__image about__item">
             <img
               src="./images/mobile/egg750.jpg"
-              alt="boiled egg"
               srcset="
                 ./images/mobile/egg750.jpg 750w,
                 ./images/dektop/egg720.jpg 720w
               "
+              alt="boiled egg"
             />
           </div>
         </section>
 
         <section class="primary-content grid">
-          <div class="image">
+          <div class="about__image about__item">
             <img
               src="./images/mobile/cup750.jpg"
               alt="pink cup"
@@ -95,27 +98,26 @@
               "
             />
           </div>
-          <div>
+          <div class="about__text">
             <h1 class="section-title">Stand out to the right audience</h1>
             <p>
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
             </p>
-            <a href="#" class="btn">Learn more</a>
+            <a href="#" class="btn-pink">Learn more</a>
           </div>
         </section>
-        <section class="primary-content grid">
-          <div class="primary__content">
+
+        <section class="services grid">
+          <div class="primary__content flex">
             <h1 class="primary__title">Graphic Design</h1>
             <p>
               We deliver artwork that underscores your brand message and
               captures potential clients’ attention.
             </p>
           </div>
-        </section>
-        <section class="primary-content grid">
-          <div class="primary__content">
+          <div class="primary__content flex">
             <h1 class="primary__title">Photography</h1>
             <p>
               Increase your credibility by getting the most stunning,
@@ -127,14 +129,14 @@
         <section class="testimonial">
           <h1>Client testimonials</h1>
           <div class="row">
-            <div class="card">
+            <div class="card flex">
               <img
                 class="card__image"
                 src="./images/image-emily.jpg"
                 alt="emily picture"
               />
               <div class="card__details">
-                <blockquote>
+                <blockquote class="flex">
                   <p>
                     We put our trust in Sunnyside and they delivered, making
                     sure our needs were met and deadlines were always hit.
@@ -144,14 +146,14 @@
                 </blockquote>
               </div>
             </div>
-            <div class="card">
+            <div class="card flex">
               <img
                 class="card__image"
                 src="./images/image-thomas.jpg"
                 alt="emily picture"
               />
               <div class="card__details">
-                <blockquote>
+                <blockquote class="flex">
                   <p>
                     Sunnyside’s enthusiasm coupled with their keen interest in
                     our brand’s success made it a satisfying and enjoyable
@@ -162,14 +164,14 @@
                 </blockquote>
               </div>
             </div>
-            <div class="card">
+            <div class="card flex">
               <img
                 class="card__image"
                 src="./images/image-jennie.jpg"
                 alt="emily picture"
               />
               <div class="card__details">
-                <blockquote>
+                <blockquote class="flex">
                   <p>
                     Incredible end result! Our sales increased over 400% when we
                     worked with Sunnyside. Highly recommended!
@@ -241,9 +243,9 @@
         <div class="footer-item">
           <a href="#projects">Projects</a>
         </div>
-        <div class="footer-item">
+        <!-- <div class="footer-item">
           <a href="#contact">Contact</a>
-        </div>
+        </div> -->
       </div>
       <div class="social row">
         <img src="./images/icon-facebook.svg" alt="facebook logo" />
