@@ -13,18 +13,25 @@
   text-transform: uppercase;
   color: $Very-dark-desaturated-blue;
   z-index: 2;
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     display: block;
     height: 10px;
     border-radius: 50px;
-    top: 72%;
-    left: 0;
+    top: 65%;
+    left: -60%;
     transform: translate(50%);
     background-color: $Yellow;
     width: 110%;
-    z-index: 1;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  &:hover {
+    cursor: pointer;
+    &::after {
+      opacity: 1;
+    }
   }
 }
 .btn-pink {
@@ -35,18 +42,25 @@
   text-transform: uppercase;
   color: $Very-dark-desaturated-blue;
   z-index: 2;
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     display: block;
     height: 10px;
     border-radius: 50px;
-    top: 72%;
-    left: 0;
+    top: 65%;
+    left: -60%;
     transform: translate(50%);
     background-color: $Soft-red;
     width: 110%;
-    z-index: 1;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  &:hover {
+    cursor: pointer;
+    &::after {
+      opacity: 1;
+    }
   }
 }
 
