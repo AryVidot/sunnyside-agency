@@ -43,10 +43,9 @@
       transform: translate(-50%, -50%);
       align-items: center;
       h1 {
-        font-size: $fs-xxxlarge;
+        font-size: $fs-xxlarge;
         text-transform: uppercase;
         letter-spacing: 10px;
-        // font-size: 4rem;
         margin-bottom: 7rem;
       }
       img {
@@ -73,10 +72,9 @@
       align-items: center;
       width: 65%;
       h1 {
-        font-size: $fs-xlarge;
+        font-size: 5rem;
         text-transform: uppercase;
         letter-spacing: 10px;
-        // font-size: 4rem;
         margin-bottom: 7rem;
       }
       img {
@@ -85,5 +83,10 @@
     }
   }
 }
-@media (min-width: $desktop) {
-}
+// @media (min-width: $desktop) {
+//   .hero__content {
+//     h1 {
+//       font-size: $fs-xxlarge;
+//     }
+//   }
+// }

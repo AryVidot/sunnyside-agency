@@ -49,19 +49,16 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- sass CSS compiler
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+-
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Be more organised from the start by studying the layout to get the most out of it and do not repeat myself and changing layout system too often.
+- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
@@ -81,20 +78,25 @@ const proudOfThisFunc = () => {
 };
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to focus more on how to use Media query with Sass. My approach hasn't been the most DRY as I wish it could be. This could be more refine.
+The image sizing was quite challenging. I haven't master yet the srcset attribute for a set of images.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I woudl like to explore more how to create a more reponsive CSS Grid Hero image - All the page could have been done with CSS Grid if i wqas more organise at the beginning.
+
+- [CSS Gris Hero Image](https://dev.to/billraymond/creating-a-pure-responsive-css-grid-hero-image-or-banner-image-2pej)
+
+I need to explore more the different mobile menu feature with JS.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Reorder Element with CSS Grid](https://www.youtube.com/watch?v=Q_ESZ1Jt_NQ) - easy to understand video for changing the element order in CSS Grid - There is not enough views for how good it it is.
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Srcset](https://yatendrapratapsingh.blogspot.com/2020/06/mobile-first-approach-picture-srcset.html) - This is an amazing article which helped me finally understand how to use "srcset" in my project. I'd recommend it to anyone still learning this concept.
+- [Convert HEX to HSL](https://colordesigner.io/convert/hextohsl) - This is an amazing tool when working with HSL.
+- [Git revert command](https://www.git-tower.com/learn/git/commands/git-revert/) - I learn a bit more about how to revert, check and reset commit from the command line.
+- [Git - Undoing Things](https://www.youtube.com/watch?v=RIYrfkZjWmA&t=315s) - This video will teach you the basics of undoing things with git.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

@@ -174,7 +174,7 @@ header {
 }
 
 .nav--visible {
-  visibility: hidden;
+  visibility: visible;
   height: auto;
   position: relative;
 }
@@ -351,7 +351,7 @@ header {
     opacity: 0.6;
   }
   .nav__item + .nav__item {
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
   .nav-toggle {
     display: none;
@@ -526,7 +526,7 @@ footer .social {
     align-items: center;
   }
   .hero .hero__content h1 {
-    font-size: 3.55rem;
+    font-size: 3.4rem;
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: 7rem;
@@ -555,7 +555,7 @@ footer .social {
     width: 65%;
   }
   .hero .hero__content h1 {
-    font-size: 2.7rem;
+    font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: 7rem;
@@ -892,6 +892,47 @@ blockquote p:nth-last-child(1) {
 }
 
 @media (min-width: 950px) {
+  .testimonial {
+    padding: 4rem;
+    background-color: #fffcfa;
+  }
+  .testimonial h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .card .card__image {
+    border-radius: 50%;
+    height: 5rem;
+    margin: 2rem 0 5rem 0;
+  }
+  blockquote p {
+    font-size: 1.125rem;
+    margin-bottom: 5rem;
+    color: #5a636c;
+  }
+  blockquote cite {
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #23303e;
+    margin-bottom: 0.5rem;
+  }
+  blockquote p:nth-last-child(1) {
+    color: #a7abae;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
   .testimonial {
     padding: 4rem;
     background-color: #fffcfa;
