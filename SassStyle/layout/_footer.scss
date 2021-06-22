@@ -30,7 +30,7 @@ footer {
 
 @media (min-width: $tablet) {
   footer {
-    height: 35vh;
+    height: 40vh;
     .row {
       justify-content: center;
       .footer-item a {
@@ -41,7 +41,7 @@ footer {
       }
     }
     .social {
-      margin-top: 6rem;
+      margin-top: 5rem;
       justify-content: center;
       img {
         margin: 1rem;

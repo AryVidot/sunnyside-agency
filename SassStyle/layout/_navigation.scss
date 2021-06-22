@@ -11,6 +11,7 @@ header {
   width: 90%;
   // max-width: 1440px;
   margin: 0 auto;
+  padding-top: 1.5rem;
   position: relative;
   .logo {
     align-items: center;
@@ -32,7 +33,7 @@ header {
   z-index: 2;
 }
 .nav--visible {
-  visibility: visible;
+  visibility: hidden;
   height: auto;
   position: relative;
 }
@@ -42,7 +43,7 @@ header {
     text-decoration: none;
     color: $White;
     font-family: $body-ft;
-    font-size: 22px;
+    font-size: $fs-medium;
     font-weight: lighter;
   }
 }
@@ -71,37 +72,8 @@ header {
   opacity: 0.75;
 }
 
-// Hamburger
-// .hamburger {
-//   width: 50%;
-//   position: relative;
-// }
-
-// .hamburger,
-// .hamburger::before,
-// .hamburger::after {
-//   display: block;
-//   margin: 0 auto;
-//   height: 2px;
-//   background: $White;
-// }
-
-// .hamburger::before,
-// .hamburger::after {
-//   content: "";
-//   width: 100%;
-// }
-
-// .hamburger::before {
-//   transform: translateY(-7px);
-// }
-
-// .hamburger::after {
-//   transform: translateY(5px);
-// }
-
 // NavLink CTA
-@media (min-width: $tablet) {
+@media (min-width: $small-laptop) {
   .nav {
     visibility: visible;
     display: flex;
@@ -127,11 +99,21 @@ header {
       color: $White;
       h1 {
         font-family: $logo-ft;
-        font-size: $fs-xlarge;
+        font-size: $fs-medium;
 
         text-transform: lowercase;
         font-weight: 900;
       }
+    }
+  }
+  .nav__item {
+    list-style: none;
+    .nav__link {
+      text-decoration: none;
+      color: $White;
+      font-family: $body-ft;
+      font-size: $fs-xsmall;
+      font-weight: lighter;
     }
   }
 
@@ -141,7 +123,7 @@ header {
     background-color: $White;
     text-transform: uppercase;
     border-radius: 50px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease-out;
   }
   .nav__item:nth-last-child(1) {
@@ -162,7 +144,84 @@ header {
     // background-color: $Grayish-blue;
   }
   .nav__item + .nav__item {
-    margin-left: 4.5rem;
+    margin-left: 2rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    .logo {
+      align-items: center;
+      text-decoration: none;
+      color: $White;
+      h1 {
+        font-family: $logo-ft;
+        font-size: $fs-large;
+        text-transform: lowercase;
+        font-weight: 900;
+      }
+    }
+  }
+  .nav__item {
+    list-style: none;
+    .nav__link {
+      text-decoration: none;
+      color: $White;
+      font-family: $body-ft;
+      font-size: $fs-small;
+      font-weight: lighter;
+    }
+  }
+
+  .cta {
+    font-family: $title-ft;
+    color: $Very-dark-desaturated-blue;
+    background-color: $White;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-out;
+  }
+  .nav__item:nth-last-child(1) {
+    .cta {
+      font-family: $title-ft;
+      color: $Very-dark-desaturated-blue;
+    }
+  }
+  .nav__item:nth-last-child(1):hover,
+  .nav__item:nth-last-child(1):focus,
+  .cta {
+    color: $White;
+  }
+  .cta:hover,
+  .cta:focus {
+    color: $White;
+    opacity: 0.6;
+    // background-color: $Grayish-blue;
+  }
+  .nav__item + .nav__item {
+    margin-left: 3rem;
   }
 
   .nav-toggle {

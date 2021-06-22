@@ -42,7 +42,54 @@ blockquote {
 
 @media (min-width: $tablet) {
   .testimonial {
-    padding: 12rem;
+    padding: 2.5rem;
+    background-color: $Beige;
+    h1 {
+      text-transform: uppercase;
+      font-size: $fs-large;
+      letter-spacing: 4px;
+      font-weight: 900;
+      margin-bottom: 2rem;
+    }
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    .card__image {
+      border-radius: 50%;
+      height: 4rem;
+      margin: 2rem 0 2rem 0;
+    }
+  }
+  blockquote {
+    p {
+      font-size: $fs-small;
+      margin-bottom: 2.5rem;
+      color: $Very-dark-grayish-blue;
+    }
+    cite {
+      font-family: $title-ft;
+      font-style: normal;
+      font-size: $fs-small;
+      font-weight: 900;
+      color: $Very-dark-desaturated-blue;
+      margin-bottom: 0.5rem;
+    }
+    p:nth-last-child(1) {
+      color: $Grayish-blue;
+      font-size: $fs-xsmall;
+    }
+  }
+
+  //   .card + .card {
+  //     margin-left: 2rem;
+  //   }
+}
+
+@media (min-width: $small-laptop) {
+  .testimonial {
+    padding: 4rem;
     background-color: $Beige;
     h1 {
       text-transform: uppercase;

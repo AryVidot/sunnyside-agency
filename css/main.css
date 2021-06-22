@@ -148,6 +148,7 @@ header {
 .nav-container {
   width: 90%;
   margin: 0 auto;
+  padding-top: 1.5rem;
   position: relative;
 }
 
@@ -173,7 +174,7 @@ header {
 }
 
 .nav--visible {
-  visibility: visible;
+  visibility: hidden;
   height: auto;
   position: relative;
 }
@@ -186,7 +187,7 @@ header {
   text-decoration: none;
   color: white;
   font-family: "Barlow", sans-serif;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: lighter;
 }
 
@@ -213,7 +214,7 @@ header {
   opacity: 0.75;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 950px) {
   .nav {
     visibility: visible;
     display: flex;
@@ -240,9 +241,19 @@ header {
   }
   .nav-container .logo h1 {
     font-family: "Lato", sans-serif;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
     text-transform: lowercase;
     font-weight: 900;
+  }
+  .nav__item {
+    list-style: none;
+  }
+  .nav__item .nav__link {
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
   }
   .cta {
     font-family: "Fraunces", serif;
@@ -250,7 +261,7 @@ header {
     background-color: white;
     text-transform: uppercase;
     border-radius: 50px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     transition: all 0.3s ease-out;
   }
   .nav__item:nth-last-child(1) .cta {
@@ -268,7 +279,79 @@ header {
     opacity: 0.6;
   }
   .nav__item + .nav__item {
-    margin-left: 4.5rem;
+    margin-left: 2rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .nav-container .logo {
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  .nav-container .logo h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    text-transform: lowercase;
+    font-weight: 900;
+  }
+  .nav__item {
+    list-style: none;
+  }
+  .nav__item .nav__link {
+    text-decoration: none;
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.125rem;
+    font-weight: lighter;
+  }
+  .cta {
+    font-family: "Fraunces", serif;
+    color: #23303e;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-out;
+  }
+  .nav__item:nth-last-child(1) .cta {
+    font-family: "Fraunces", serif;
+    color: #23303e;
+  }
+  .nav__item:nth-last-child(1):hover,
+  .nav__item:nth-last-child(1):focus,
+  .cta {
+    color: white;
+  }
+  .cta:hover,
+  .cta:focus {
+    color: white;
+    opacity: 0.6;
+  }
+  .nav__item + .nav__item {
+    margin-left: 3rem;
   }
   .nav-toggle {
     display: none;
@@ -310,9 +393,9 @@ footer .social {
   justify-content: space-evenly;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   footer {
-    height: 35vh;
+    height: 40vh;
   }
   footer .row {
     justify-content: center;
@@ -324,7 +407,7 @@ footer .social {
     margin-left: 4rem;
   }
   footer .social {
-    margin-top: 6rem;
+    margin-top: 5rem;
     justify-content: center;
   }
   footer .social img {
@@ -346,7 +429,7 @@ footer .social {
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .row {
     display: flex;
     justify-content: space-between;
@@ -380,7 +463,7 @@ footer .social {
   height: 100%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .block-image {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -425,7 +508,7 @@ footer .social {
   width: auto;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hero {
     height: 100vh;
     width: 100%;
@@ -444,6 +527,35 @@ footer .social {
   }
   .hero .hero__content h1 {
     font-size: 3.55rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 7rem;
+  }
+  .hero .hero__content img {
+    height: 140px;
+  }
+}
+
+@media (min-width: 950px) {
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background: url(../../images/desktop/header2880.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero .hero__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: 65%;
+  }
+  .hero .hero__content h1 {
+    font-size: 2.7rem;
     text-transform: uppercase;
     letter-spacing: 10px;
     margin-bottom: 7rem;
@@ -484,7 +596,57 @@ footer .social {
   order: -1;
 }
 
+@media (min-width: 768px) {
+  .about__text {
+    align-items: baseline;
+    text-align: left;
+    padding: 10rem 4.5rem;
+  }
+  .about__text h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .about__text p {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 @media (min-width: 950px) {
+  .about__text {
+    align-items: baseline;
+    text-align: left;
+    padding: 3rem 3.5rem;
+  }
+  .about__text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .about__text p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .about__item:nth-last-of-type(1) {
+    order: 0;
+  }
+  .about__item {
+    width: 100%;
+    height: auto;
+  }
+  .about__image {
+    height: auto;
+    width: 100%;
+  }
+  .about__image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
   .about__text {
     align-items: baseline;
     text-align: left;
@@ -524,6 +686,7 @@ footer .social {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 60vh;
   padding: 1rem;
   color: #25564b;
 }
@@ -534,18 +697,18 @@ footer .social {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 60vh;
   color: #19536b;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .primary__content:nth-of-type(1) {
     background-image: url(../../images/desktop/cherry720.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 85vh;
-    padding: 15rem;
+    height: 70vh;
     color: #25564b;
   }
   .primary__content:nth-of-type(2) {
@@ -554,8 +717,26 @@ footer .social {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 85vh;
-    padding: 15rem;
+    height: 70vh;
+    color: #19536b;
+  }
+}
+
+@media (min-width: 950px) {
+  .primary__content:nth-of-type(1) {
+    background-image: url(../../images/desktop/cherry720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #25564b;
+  }
+  .primary__content:nth-of-type(2) {
+    background-image: url(../../images/desktop/mandarin720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     color: #19536b;
   }
 }
@@ -605,9 +786,50 @@ blockquote p:nth-last-child(1) {
   font-size: 1rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .testimonial {
-    padding: 12rem;
+    padding: 2.5rem;
+    background-color: #fffcfa;
+  }
+  .testimonial h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .card .card__image {
+    border-radius: 50%;
+    height: 4rem;
+    margin: 2rem 0 2rem 0;
+  }
+  blockquote p {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    color: #5a636c;
+  }
+  blockquote cite {
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #23303e;
+    margin-bottom: 0.5rem;
+  }
+  blockquote p:nth-last-child(1) {
+    color: #a7abae;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .testimonial {
+    padding: 4rem;
     background-color: #fffcfa;
   }
   .testimonial h1 {
